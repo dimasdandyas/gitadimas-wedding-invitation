@@ -221,7 +221,7 @@
         }
 
         .invitation-envelope {
-            width: 350px;
+            width: 330px;
             height: 220px;
             background: #f9f7f0;
             border-radius: 8px;
@@ -477,7 +477,7 @@
                     <p class="text-xs mt-4">1</p> -->
                 </div>
             </div>
-            <b><p class="invitation-instruction">To : Miyuki-Chan</p></b>
+            <b><p class="invitation-instruction" id="invitation-name"></p></b>
         </div>
     </div>
 
@@ -898,6 +898,33 @@
     </div>
 
     <script>
+        //REGION CEK PATH
+
+        // Ambil ID dari URL path, contoh: /300
+        const path = window.location.pathname;
+        const id = path.replace("/", "");
+
+        // Data undangan
+        const undangan = {
+        "300": "Anton",
+        "301": "Citra",
+        "302": "Budi",
+        "303": "Sinta",
+        "304": "Dimas",
+        };
+
+        // Cek ID
+        const namaTamu = undangan[id] || "Tamu Undangan";
+
+        // Tampilkan ke halaman
+        const namaEl = document.getElementById("invitation-name");
+        if (namaEl) {
+            namaEl.textContent = `To : ${namaTamu}`;
+        }
+
+        //END REGION CEK PATH
+
+
         //REGION Invitation Cover
 
         const invitationCover = document.querySelector('.invitation-cover');
