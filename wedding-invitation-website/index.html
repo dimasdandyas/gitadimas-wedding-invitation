@@ -458,443 +458,375 @@
     </style>
 </head>
 <body>
-    <!-- Invitation Cover -->
-    <div class="invitation-cover">
-        <div class="invitation-container">
-            <div class="invitation-envelope" id="envelope">
-                <div class="invitation-flap"></div>
-                <div class="invitation-seal">
-                    <i class="fas fa-heart"></i>
+    <div id="divInvited">
+        <!-- Invitation Cover -->
+        <div class="invitation-cover">
+            <div class="invitation-container">
+                <div class="invitation-envelope" id="envelope">
+                    <div class="invitation-flap"></div>
+                    <div class="invitation-seal">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="invitation-text">
+                        <!-- <h2>You're Invited</h2> -->
+                        <p>You're Invited To the Intimate Wedding of</p>
+                        <h3>Gita & Dimas</h3>
+                        <p class="text-xs mt-4">Click to open invitation</p>
+    
+                        <!-- <p>paragraph</p>
+                        <h3>h3h3</h3>
+                        <p class="text-xs mt-4">1</p> -->
+                    </div>
                 </div>
-                <div class="invitation-text">
-                    <!-- <h2>You're Invited</h2> -->
-                    <p>You're Invited To the Intimate Wedding of</p>
-                    <h3>Gita & Dimas</h3>
-                    <p class="text-xs mt-4">Click to open invitation</p>
-
-                    <!-- <p>paragraph</p>
-                    <h3>h3h3</h3>
-                    <p class="text-xs mt-4">1</p> -->
-                </div>
+                <b><p class="invitation-instruction" id="invitation-name"></p></b>
             </div>
-            <b><p class="invitation-instruction" id="invitation-name"></p></b>
         </div>
-    </div>
-
-    <!-- Main Content (initially hidden) -->
-    <div id="main-content" style="display: none;">
-        <!-- Navigation -->
-        <nav class="fixed w-full z-50 bg-white bg-opacity-90 shadow-sm transition-all duration-300 hidden md:block">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="flex justify-between items-center py-4">
-                    <div class="text-2xl font-bold text-gray-800">
-                        <span class="text-[#b88b58]">G</span> & <span class="text-[#b88b58]">D</span>
-                    </div>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="#home" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Home</a>
-                        <a href="#couple" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Couple</a>
-                        <a href="#story" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Our Story</a>
-                        <a href="#events" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Events</a>
-                        <a href="#gallery" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Gallery</a>
-                        <a href="#rsvp" class="nav-link text-gray-700 hover:text-[#b88b58] transition">RSVP</a>
+    
+        <!-- Main Content (initially hidden) -->
+        <div id="main-content" style="display: none;">
+            <!-- Navigation -->
+            <nav class="fixed w-full z-50 bg-white bg-opacity-90 shadow-sm transition-all duration-300 hidden md:block">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex justify-between items-center py-4">
+                        <div class="text-2xl font-bold text-gray-800">
+                            <span class="text-[#b88b58]">G</span> & <span class="text-[#b88b58]">D</span>
+                        </div>
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#home" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Home</a>
+                            <a href="#couple" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Couple</a>
+                            <a href="#story" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Our Story</a>
+                            <a href="#events" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Events</a>
+                            <a href="#gallery" class="nav-link text-gray-700 hover:text-[#b88b58] transition">Gallery</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section id="home" class="hero min-h-screen flex items-center justify-center text-center text-white relative overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <div class="z-10 px-4 animate-fade-in">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-slide-up">Dimas & Gita</h1>
-                <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                <p class="text-xl md:text-2xl mb-8 animate-slide-up" style="animation-delay: 0.3s;">Are Getting Married</p>
-                <p class="text-lg md:text-xl mb-8 animate-slide-up" style="animation-delay: 0.6s;">July 26, 2025 • Cibinong</p>
-                <div class="animate-slide-up" style="animation-delay: 0.9s;">
-                    <a href="#rsvp" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-800 transition duration-300">RSVP Now</a>
-                </div>
-            </div>
-            <div class="absolute bottom-10 left-0 right-0 text-center animate-bounce">
-                <a href="#couple" class="text-white text-2xl">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Couple Section -->
-        <section id="couple" class="section py-20 bg-[#f9f7f0]">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The Happy Couple</h2>
+            </nav>
+    
+            <!-- Hero Section -->
+            <section id="home" class="hero min-h-screen flex items-center justify-center text-center text-white relative overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+                <div class="z-10 px-4 animate-fade-in">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-slide-up">Dimas & Gita</h1>
                     <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Two hearts, one love story that began years ago and continues to grow stronger every day.</p>
+                    <p class="text-xl md:text-2xl mb-8 animate-slide-up" style="animation-delay: 0.3s;">Are Getting Married</p>
+                    <p class="text-lg md:text-xl mb-8 animate-slide-up" style="animation-delay: 0.6s;">July 26, 2025 • Cibinong</p>
                 </div>
-                
-                <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-20">
-                    <div class="text-center">
-                        <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Groom" class="w-full h-full object-cover">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">Dimas Johnson</h3>
-                        <p class="text-gray-600">The Groom</p>
-                        <div class="flex justify-center space-x-4 mt-4">
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-instagram"></i></a>
-                        </div>
+                <div class="absolute bottom-20 left-0 right-0 text-center animate-bounce">
+                    <a href="#couple" class="text-white text-2xl">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </section>
+    
+            <!-- Couple Section -->
+            <section id="couple" class="section py-20 bg-[#f9f7f0]">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">The Happy Couple</h2>
+                        <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
+                        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Two hearts, one love story that began years ago and continues to grow stronger every day.</p>
                     </div>
                     
-                    <div class="hidden md:block floating">
-                        <div class="w-32 h-32 bg-[#b88b58] rounded-full flex items-center justify-center text-white text-4xl">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bride" class="w-full h-full object-cover">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">Gita Smith</h3>
-                        <p class="text-gray-600">The Bride</p>
-                        <div class="flex justify-center space-x-4 mt-4">
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center">
-                    <p class="text-lg italic text-gray-600 max-w-3xl mx-auto">"We found love in each other's arms and a lifetime of happiness in each other's hearts."</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Countdown Section -->
-        <section class="section py-16 bg-[#0a192f] text-white">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Counting The Days</h2>
-                    <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl max-w-2xl mx-auto">Until we say "I do"</p>
-                </div>
-                
-                <div class="flex justify-center gap-4 md:gap-8">
-                    <div class="countdown-number flex flex-col items-center">
-                        <span id="days" class="text-4xl md:text-6xl font-bold">00</span>
-                        <span class="text-sm md:text-base">Days</span>
-                    </div>
-                    <div class="countdown-number flex flex-col items-center">
-                        <span id="hours" class="text-4xl md:text-6xl font-bold">00</span>
-                        <span class="text-sm md:text-base">Hours</span>
-                    </div>
-                    <div class="countdown-number flex flex-col items-center">
-                        <span id="minutes" class="text-4xl md:text-6xl font-bold">00</span>
-                        <span class="text-sm md:text-base">Minutes</span>
-                    </div>
-                    <div class="countdown-number flex flex-col items-center">
-                        <span id="seconds" class="text-4xl md:text-6xl font-bold">00</span>
-                        <span class="text-sm md:text-base">Seconds</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Story Section -->
-        <section id="story" class="section py-20 bg-[#f9f7f0]">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Love Story</h2>
-                    <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Every love story is beautiful, but ours is our favorite.</p>
-                </div>
-                
-                <div class="relative max-w-4xl mx-auto">
-                    <div class="absolute left-1/2 h-full w-1 bg-[#b88b58] transform -translate-x-1/2 hidden md:block"></div>
-                    
-                    <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
-                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-2 md:order-1">
-                            <h3 class="text-2xl font-bold mb-3">First Meeting</h3>
-                            <p class="text-gray-600">It was a rainy afternoon in September 2015 when we first met at a coffee shop. Dimas spilled his coffee on Gita's favorite book, and instead of getting angry, she laughed it off. That moment sparked a conversation that lasted for hours.</p>
-                        </div>
-                        <div class="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
-                            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
-                                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="First Meeting" class="w-full h-full object-cover">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-20">
+                        <div class="text-center">
+                            <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Groom" class="w-full h-full object-cover">
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
-                        <div class="md:w-1/2 flex justify-center md:justify-start">
-                            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
-                                <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="First Date" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
-                            <h3 class="text-2xl font-bold mb-3">First Date</h3>
-                            <p class="text-gray-600">Two weeks later, we had our first official date at a small Italian restaurant. The food was mediocre, but the company was unforgettable. We talked until the restaurant closed, and then walked through the city streets until sunrise.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
-                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-2 md:order-1">
-                            <h3 class="text-2xl font-bold mb-3">The Proposal</h3>
-                            <p class="text-gray-600">On a trip to Paris in 2022, Dimas proposed at the top of the Eiffel Tower at sunset. Gita said yes before he could even finish his sentence. It was a magical moment that we'll cherish forever.</p>
-                        </div>
-                        <div class="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
-                            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
-                                <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Proposal" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Events Section -->
-        <section id="events" class="section py-20 bg-white">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Wedding Events</h2>
-                    <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Join us in celebrating our love</p>
-                </div>
-                
-                <div class="max-w-4xl mx-auto">
-                    <div class="relative pl-8 md:pl-0">
-                        <div class="border-l-2 border-[#b88b58] md:border-l-0 md:border-t-2 md:border-[#b88b58] absolute left-0 top-0 h-full md:h-2 md:w-full md:top-1/2"></div>
-                        
-                        <div class="mb-12 relative">
-                            <div class="md:flex items-center">
-                                <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0">
-                                    <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
-                                        <h3 class="text-2xl font-bold mb-3">Engagement Party</h3>
-                                        <div class="flex items-center text-gray-600 mb-3">
-                                            <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
-                                            <span>April 15, 2024</span>
-                                        </div>
-                                        <div class="flex items-center text-gray-600 mb-4">
-                                            <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
-                                            <span>The Garden Terrace, New York</span>
-                                        </div>
-                                        <p class="text-gray-600">Join us for an evening of celebration as we officially announce our engagement to family and friends.</p>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 flex justify-center">
-                                    <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
-                                        <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Engagement Party" class="w-full h-full object-cover">
-                                    </div>
-                                </div>
+                            <h3 class="text-2xl font-bold mb-2">Dimas Dandy Aryarajendra Suprapto</h3>
+                            <p class="text-gray-600">The Groom</p>
+                            <div class="flex justify-center space-x-4 mt-4">
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         
-                        <div class="mb-12 relative">
-                            <div class="md:flex items-center flex-row-reverse">
-                                <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0">
-                                    <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
-                                        <h3 class="text-2xl font-bold mb-3">Bridal Shower</h3>
-                                        <div class="flex items-center text-gray-600 mb-3">
-                                            <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
-                                            <span>May 20, 2024</span>
-                                        </div>
-                                        <div class="flex items-center text-gray-600 mb-4">
-                                            <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
-                                            <span>The Rose Garden, Brooklyn</span>
-                                        </div>
-                                        <p class="text-gray-600">An intimate gathering for the bride and her closest friends and family to celebrate the upcoming wedding.</p>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 flex justify-center">
-                                    <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
-                                        <img src="https://images.unsplash.com/photo-1529634310417-0b0eac3a5f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bridal Shower" class="w-full h-full object-cover">
-                                    </div>
-                                </div>
+                        <div class="hidden md:block floating">
+                            <div class="w-32 h-32 bg-[#b88b58] rounded-full flex items-center justify-center text-white text-4xl">
+                                <i class="fas fa-heart"></i>
                             </div>
-                        </div>
-                        
-                        <div class="relative">
-                            <div class="md:flex items-center">
-                                <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0">
-                                    <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
-                                        <h3 class="text-2xl font-bold mb-3">Wedding Ceremony</h3>
-                                        <div class="flex items-center text-gray-600 mb-3">
-                                            <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
-                                            <span>June 15, 2024</span>
-                                        </div>
-                                        <div class="flex items-center text-gray-600 mb-4">
-                                            <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
-                                            <span>The Grand Ballroom, New York</span>
-                                        </div>
-                                        <p class="text-gray-600">The main event! Join us as we exchange vows and begin our journey together as husband and wife.</p>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 flex justify-center">
-                                    <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
-                                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wedding Ceremony" class="w-full h-full object-cover">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="section py-20 bg-[#f9f7f0]">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Gallery</h2>
-                    <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Moments we've shared together</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="Gallery 1" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 2" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="Gallery 3" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 4" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1529634310417-0b0eac3a5f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 5" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="gallery-item rounded-lg overflow-hidden shadow-md">
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gallery 6" class="w-full h-64 object-cover">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- RSVP Section -->
-        <section id="rsvp" class="section py-20 bg-white">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">RSVP</h2>
-                    <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Please let us know if you'll be joining us</p>
-                </div>
-                
-                <div class="bg-[#f9f7f0] p-8 rounded-lg shadow-sm">
-                    <form id="rsvp-form" class="rsvp-form space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded" required>
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded" required>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 rounded">
-                            </div>
-                            <div>
-                                <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
-                                <select id="guests" name="guests" class="w-full px-4 py-2 rounded" required>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5+</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label class="block text-gray-700 mb-4">Will you be attending?</label>
-                            <div class="flex space-x-6">
-                                <label class="inline-flex items-center">
-                                    <input type="radio" name="attending" value="yes" class="form-radio text-[#b88b58]" checked>
-                                    <span class="ml-2">Yes, I'll be there</span>
-                                </label>
-                                <label class="inline-flex items-center">
-                                    <input type="radio" name="attending" value="no" class="form-radio text-[#b88b58]">
-                                    <span class="ml-2">No, I can't make it</span>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-700 mb-2">Message (Optional)</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded"></textarea>
                         </div>
                         
                         <div class="text-center">
-                            <button type="submit" class="bg-[#b88b58] text-white px-8 py-3 rounded-full hover:bg-[#9a6f3d] transition duration-300">Submit RSVP</button>
+                            <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bride" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">Gita Fitria Halim</h3>
+                            <p class="text-gray-600">The Bride</p>
+                            <div class="flex justify-center space-x-4 mt-4">
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-gray-600 hover:text-[#b88b58]"><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
-                    </form>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-lg italic text-gray-600 max-w-3xl mx-auto">"We found love in each other's arms and a lifetime of happiness in each other's hearts."</p>
+                    </div>
                 </div>
+            </section>
+    
+            <!-- Countdown Section -->
+            <section class="section py-16 bg-[#0a192f] text-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Counting The Days</h2>
+                        <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
+                        <p class="text-lg md:text-xl max-w-2xl mx-auto">Until we say "I do"</p>
+                    </div>
+                    
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <div class="countdown-number flex flex-col items-center">
+                            <span id="days" class="text-4xl md:text-6xl font-bold">00</span>
+                            <span class="text-sm md:text-base">Days</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center">
+                            <span id="hours" class="text-4xl md:text-6xl font-bold">00</span>
+                            <span class="text-sm md:text-base">Hours</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center">
+                            <span id="minutes" class="text-4xl md:text-6xl font-bold">00</span>
+                            <span class="text-sm md:text-base">Minutes</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center">
+                            <span id="seconds" class="text-4xl md:text-6xl font-bold">00</span>
+                            <span class="text-sm md:text-base">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Our Story Section -->
+            <section id="story" class="section py-20 bg-[#f9f7f0]">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Love Story</h2>
+                        <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
+                        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Every love story is beautiful, but ours is our favorite.</p>
+                    </div>
+                    
+                    <div class="relative max-w-4xl mx-auto">
+                        <div class="absolute left-1/2 h-full w-1 bg-[#b88b58] transform -translate-x-1/2 hidden md:block"></div>
+                        
+                        <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
+                            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-2 md:order-1">
+                                <h3 class="text-2xl font-bold mb-3">First Meeting</h3>
+                                <p class="text-gray-600">It was a rainy afternoon in September 2015 when we first met at a coffee shop. Dimas spilled his coffee on Gita's favorite book, and instead of getting angry, she laughed it off. That moment sparked a conversation that lasted for hours.</p>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
+                                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
+                                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="First Meeting" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
+                            <div class="md:w-1/2 flex justify-center md:justify-start">
+                                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
+                                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="First Date" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                                <h3 class="text-2xl font-bold mb-3">First Date</h3>
+                                <p class="text-gray-600">Two weeks later, we had our first official date at a small Italian restaurant. The food was mediocre, but the company was unforgettable. We talked until the restaurant closed, and then walked through the city streets until sunrise.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-12 flex flex-col md:flex-row items-center md:items-start">
+                            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-2 md:order-1">
+                                <h3 class="text-2xl font-bold mb-3">The Proposal</h3>
+                                <p class="text-gray-600">On a trip to Paris in 2022, Dimas proposed at the top of the Eiffel Tower at sunset. Gita said yes before he could even finish his sentence. It was a magical moment that we'll cherish forever.</p>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
+                                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-[#b88b58]">
+                                    <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Proposal" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Events Section -->
+            <section id="events" class="section py-20 bg-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Wedding Events</h2>
+                        <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
+                        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Join us in celebrating our love</p>
+                    </div>
+                    
+                    <div class="max-w-4xl mx-auto">
+                        <div class="relative pl-8 md:pl-0">
+                            <div class="border-l-2 border-[#b88b58] md:border-l-0 md:border-t-2 md:border-[#b88b58] absolute left-0 top-0 h-full md:h-2 md:w-full md:top-1/2"></div>
+                            
+                            <div class="mb-12 relative">
+                                <div class="md:flex items-center">
+                                    <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0">
+                                        <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
+                                            <h3 class="text-2xl font-bold mb-3">Engagement Party</h3>
+                                            <div class="flex items-center text-gray-600 mb-3">
+                                                <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
+                                                <span>April 15, 2024</span>
+                                            </div>
+                                            <div class="flex items-center text-gray-600 mb-4">
+                                                <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
+                                                <span>The Garden Terrace, New York</span>
+                                            </div>
+                                            <p class="text-gray-600">Join us for an evening of celebration as we officially announce our engagement to family and friends.</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex justify-center">
+                                        <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                                            <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Engagement Party" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-12 relative">
+                                <div class="md:flex items-center flex-row-reverse">
+                                    <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+                                        <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
+                                            <h3 class="text-2xl font-bold mb-3">Bridal Shower</h3>
+                                            <div class="flex items-center text-gray-600 mb-3">
+                                                <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
+                                                <span>May 20, 2024</span>
+                                            </div>
+                                            <div class="flex items-center text-gray-600 mb-4">
+                                                <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
+                                                <span>The Rose Garden, Brooklyn</span>
+                                            </div>
+                                            <p class="text-gray-600">An intimate gathering for the bride and her closest friends and family to celebrate the upcoming wedding.</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex justify-center">
+                                        <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                                            <img src="https://images.unsplash.com/photo-1529634310417-0b0eac3a5f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bridal Shower" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="relative">
+                                <div class="md:flex items-center">
+                                    <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0">
+                                        <div class="bg-[#f9f7f0] p-6 rounded-lg shadow-sm">
+                                            <h3 class="text-2xl font-bold mb-3">Wedding Ceremony</h3>
+                                            <div class="flex items-center text-gray-600 mb-3">
+                                                <i class="fas fa-calendar-alt mr-2 text-[#b88b58]"></i>
+                                                <span>June 15, 2024</span>
+                                            </div>
+                                            <div class="flex items-center text-gray-600 mb-4">
+                                                <i class="fas fa-map-marker-alt mr-2 text-[#b88b58]"></i>
+                                                <span>The Grand Ballroom, New York</span>
+                                            </div>
+                                            <p class="text-gray-600">The main event! Join us as we exchange vows and begin our journey together as husband and wife.</p>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex justify-center">
+                                        <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wedding Ceremony" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Gallery Section -->
+            <section id="gallery" class="section py-20 bg-[#f9f7f0]">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Gallery</h2>
+                        <div class="w-20 h-1 bg-[#b88b58] mx-auto mb-6"></div>
+                        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Moments we've shared together</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="Gallery 1" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 2" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80" alt="Gallery 3" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1519671488599-3faf8d6f8e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 4" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1529634310417-0b0eac3a5f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Gallery 5" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="gallery-item rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gallery 6" class="w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Footer -->
+            <footer class="section py-12 bg-[#0a192f] text-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold mb-4">Dimas & Gita</h2>
+                        <p class="text-lg">June 15, 2024 • The Grand Ballroom, New York</p>
+                    </div>
+                    
+                    <div class="flex justify-center space-x-6 mb-8">
+                        <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    
+                    <div class="text-center text-sm text-gray-400">
+                        <p>© 2023 Dimas & Gita Wedding. All rights reserved.</p>
+                        <p class="mt-2">Made with <i class="fas fa-heart text-[#b88b58]"></i> for each other</p>
+                    </div>
+                </div>
+            </footer>
+    
+            <!-- Bottom Navigation (Mobile Only) -->
+            <div class="bottom-nav md:hidden">
+                <a href="#home" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#couple" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Couple</span>
+                </a>
+                <a href="#story" class="nav-item">
+                    <i class="fas fa-book-open"></i>
+                    <span>Story</span>
+                </a>
+                <a href="#events" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Events</span>
+                </a>
+                <a href="#gallery" class="nav-item">
+                    <i class="fas fa-images"></i>
+                    <span>Gallery</span>
+                </a>
             </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="section py-12 bg-[#0a192f] text-white">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold mb-4">Dimas & Gita</h2>
-                    <p class="text-lg">June 15, 2024 • The Grand Ballroom, New York</p>
-                </div>
-                
-                <div class="flex justify-center space-x-6 mb-8">
-                    <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white hover:text-[#b88b58] text-xl"><i class="fab fa-pinterest"></i></a>
-                </div>
-                
-                <div class="text-center text-sm text-gray-400">
-                    <p>© 2023 Dimas & Gita Wedding. All rights reserved.</p>
-                    <p class="mt-2">Made with <i class="fas fa-heart text-[#b88b58]"></i> for each other</p>
-                </div>
+    
+            <!-- Floating Music Player -->
+            <div class="music-player" id="music-player">
+                <i class="fas fa-music"></i>
+                <audio id="background-music" loop>
+                    <source src="/assets/music/koiiro.mp3" type="audio/mpeg">
+                </audio>
             </div>
-        </footer>
-
-        <!-- Bottom Navigation (Mobile Only) -->
-        <div class="bottom-nav md:hidden">
-            <a href="#home" class="nav-item">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="#couple" class="nav-item">
-                <i class="fas fa-heart"></i>
-                <span>Couple</span>
-            </a>
-            <a href="#story" class="nav-item">
-                <i class="fas fa-book-open"></i>
-                <span>Story</span>
-            </a>
-            <a href="#events" class="nav-item">
-                <i class="fas fa-calendar-alt"></i>
-                <span>Events</span>
-            </a>
-            <a href="#gallery" class="nav-item">
-                <i class="fas fa-images"></i>
-                <span>Gallery</span>
-            </a>
-            <a href="#rsvp" class="nav-item">
-                <i class="fas fa-envelope"></i>
-                <span>RSVP</span>
-            </a>
         </div>
+    </div>
 
-        <!-- Floating Music Player -->
-        <div class="music-player" id="music-player">
-            <i class="fas fa-music"></i>
-            <audio id="background-music" loop>
-                <source src="/assets/music/koiiro.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+    <div id="divNotInvited" style="display: none;">
+        <h1>404 NOT FOUND.</h1>
     </div>
 
     <script>
@@ -914,12 +846,23 @@
         };
 
         // Cek ID
-        const namaTamu = undangan[id] || "Tamu Undangan";
+        const namaTamu = undangan[id];
 
         // Tampilkan ke halaman
+        const divIdInvited = document.getElementById("divInvited");
+        const divIdNotInvited = document.getElementById("divNotInvited");
         const namaEl = document.getElementById("invitation-name");
-        if (namaEl) {
-            namaEl.textContent = `To : ${namaTamu}`;
+        console.log(1);
+        if (namaTamu === undefined)
+        {
+            divIdInvited.display = "none";
+            divIdNotInvited.display = "block";
+        }
+        else
+        {
+            if (namaEl) {
+                namaEl.textContent = `To : ${namaTamu}`;
+            }
         }
 
         //END REGION CEK PATH
@@ -1078,19 +1021,6 @@
         });
         
         //END REGION Smooth scrolling for navigation links
-
-
-        //REGION Form submission
-        
-        document.getElementById('rsvp-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // In a real application, you would send this data to a server
-            alert('Thank you for your RSVP! We look forward to celebrating with you.');
-            this.reset();
-        });
-
-        //END REGION Form submission
         
 
         //REGION Scroll animation for sections
