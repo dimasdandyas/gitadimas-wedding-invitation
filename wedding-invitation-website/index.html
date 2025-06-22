@@ -10,6 +10,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
         
+        html {
+            color-scheme: only light;
+            forced-color-adjust: none;
+        }
+
         :root {
             --primary: #e8d5b5;
             --secondary: #0a192f;
@@ -458,10 +463,17 @@
             }
         }
 
+        /* OVERRIDE DARK MODE */
         @media (prefers-color-scheme: dark) {
             html, body {
                 background-color: #f9f7f0 !important;
                 color: #333 !important;
+                filter: invert(0%) hue-rotate(0deg) !important;
+                -webkit-filter: invert(0%) hue-rotate(0deg) !important;
+            }
+
+            img, video, iframe, svg {
+                filter: invert(0%) hue-rotate(0deg) !important;
             }
 
             * {
@@ -478,6 +490,32 @@
 
             a {
                 color: #b88b58 !important;
+            }
+
+            .text-white {
+                color: white !important;
+            }
+
+            .text-gray-600,
+            .text-gray-700,
+            .text-gray-800 {
+                color: #333 !important;
+            }
+
+            .bg-white,
+            .bg-[#f9f7f0],
+            .bg-[#0a192f] {
+                background-color: #f9f7f0 !important;
+            }
+
+            nav, footer, .bottom-nav, .music-player {
+                background-color: white !important;
+                color: #333 !important;
+            }
+
+            .hero::before,
+            .hero::after {
+                background-color: transparent !important;
             }
         }
     </style>
