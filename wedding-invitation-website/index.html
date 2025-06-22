@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
+    <meta name="color-scheme" content="light only">
     <title>Gita & Dimas - Intimate Wedding Invitation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -455,6 +455,29 @@
             
             .bottom-nav, .music-player {
                 display: none;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html, body {
+                background-color: #f9f7f0 !important;
+                color: #333 !important;
+            }
+
+            * {
+                background-color: inherit !important;
+                color: inherit !important;
+                border-color: inherit !important;
+            }
+
+            input, textarea, select {
+                background-color: rgba(255, 255, 255, 0.9) !important;
+                color: #333 !important;
+                border-color: #b88b58 !important;
+            }
+
+            a {
+                color: #b88b58 !important;
             }
         }
     </style>
