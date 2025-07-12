@@ -989,25 +989,19 @@
                         <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Two hearts, one love story that began years ago and continues to grow stronger every day.</p>
                     </div>
                     
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-20">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-10">
                         <div class="text-center">
-                            <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
-                                <img src="assets/picture/bride.jpg" alt="Bride" class="w-full h-full object-contain">
-                            </div>
                             <h3 class="text-2xl font-bold mb-2">Gita Fitria Halim</h3>
                             <p class="text-gray-600">The Bride</p>
                         </div>
                         
-                        <div class="hidden md:block floating">
+                        <div class="md:block floating">
                             <div class="w-32 h-32 bg-[#b88b58] rounded-full flex items-center justify-center text-white text-4xl">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
                         
                         <div class="text-center">
-                            <div class="couple-img w-64 h-64 mx-auto mb-6 overflow-hidden">
-                                <img src="assets/picture/groom.jpg" alt="Groom" class="w-full h-full object-contain">
-                            </div>
                             <h3 class="text-2xl font-bold mb-2">Dimas Dandy Aryarajendra Suprapto</h3>
                             <p class="text-gray-600">The Groom</p>
                         </div>
@@ -1300,10 +1294,10 @@
         //REGION CEK PATH
 
         // Ambil ID dari URL path, contoh: /300
-        const path = window.location.pathname;
-        const id = path.replace("/", "");
-        // const hash = window.location.hash;
-        // const id = hash.replace("#", ""); // Menghapus tanda '#'
+        // const path = window.location.pathname;
+        // const id = path.replace("/", "");
+        const hash = window.location.hash;
+        const id = hash.replace("#", ""); // Menghapus tanda '#'
 
         const elementIdInvited = document.getElementById('divInvited');
         const elemetIdNotInvited = document.getElementById('divNotInvited');
