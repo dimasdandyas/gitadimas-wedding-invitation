@@ -1294,10 +1294,10 @@
         //REGION CEK PATH
 
         // Ambil ID dari URL path, contoh: /300
-        // const path = window.location.pathname;
-        // const id = path.replace("/", "");
-        const hash = window.location.hash;
-        const id = hash.replace("#", ""); // Menghapus tanda '#'
+        const path = window.location.pathname;
+        const id = path.replace("/", "");
+        // const hash = window.location.hash;
+        // const id = hash.replace("#", ""); // Menghapus tanda '#'
 
         const elementIdInvited = document.getElementById('divInvited');
         const elemetIdNotInvited = document.getElementById('divNotInvited');
